@@ -14,8 +14,7 @@ class QqSpider(scrapy.Spider):
             yield scrapy.Request(
                 url=url,
                 callback=self.parse2,
-                meta={'title': title},
-                dont_filter=False
+                meta={'title': title}
             )
 
     def parse2(self, response):

@@ -38,6 +38,7 @@ ROBOTSTXT_OBEY = True
 
 LOG_LEVEL = 'WARNING'
 ###### scrapy-redis settings start ######
+# Scrapy-Redis配置开始
 # https://github.com/rmax/scrapy-redis
 # Enables scheduling storing requests queue in redis.
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
@@ -51,6 +52,7 @@ REDIS_URL = 'redis://@192.168.170.128:6379/0'
 
 # Don't cleanup redis queues, allows to pause/resume crawls.
 SCHEDULER_PERSIST = True
+# Scrapy-Redis配置到此结束
 
 # Override the default request headers:
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64'
